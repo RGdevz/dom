@@ -6,6 +6,7 @@
 
 
         *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
             box-sizing: border-box;
             color: white;
@@ -58,7 +59,7 @@
 
         const el = document.getElementById(id)
 
-        el.classList.replace('visible','hidden')
+        el.classList.toggle('hidden')
 
     }
 
@@ -98,31 +99,20 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM</title>
 </head>
 
 <body>
+
+    <br><br>
     
+    <section>
 <p id="elm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit maxime voluptas obcaecati laudantium enim debitis quia voluptates sed blanditiis sequi exercitationem nesciunt fugit, soluta totam impedit accusantium. Laudantium, numquam.</p>
 
 <input placeholder="highlight,underline,bold" id="in" type="text">
 <button onclick="addClass()">Add Class</button>
 
-<br>
-<br>
-<hr>
-<br>
-<br>
-
-<p class="visible" id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit maxime voluptas obcaecati laudantium enim debitis quia voluptates sed blanditiis sequi exercitationem nesciunt fugit, soluta totam impedit accusantium. Laudantium, numquam.</p>
-
-<p class="visible" id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam est repudiandae dolores. At libero, saepe nostrum accusantium est eum quibusdam. Ut qui at iste officiis sapiente culpa, obcaecati natus odit.</p>
-
-<p class="visible" id="p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore quisquam voluptate sit modi aliquid veritatis, expedita molestias sed dolor labore iure veniam omnis pariatur similique natus laboriosam corporis, eos voluptates!</p>
-
-<button onclick="toggle('p1')">Hide p1</button>
-<button onclick="toggle('p2')">Hide p2</button>
-<button onclick="toggle('p3')">Hide p3</button>
+</section>
 
 <br>
 <br>
@@ -130,8 +120,41 @@
 <br>
 <br>
 
+<section>
 
+    <ol>
+
+        <li id="p1">
+<p class="visible" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit maxime voluptas obcaecati laudantium enim debitis quia voluptates sed blanditiis sequi exercitationem nesciunt fugit, soluta totam impedit accusantium. Laudantium, numquam.</p>
+</li>
+
+<li id="p2">
+<p class="visible" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam est repudiandae dolores. At libero, saepe nostrum accusantium est eum quibusdam. Ut qui at iste officiis sapiente culpa, obcaecati natus odit.</p>
+</li>
+
+<li id="p3">
+<p class="visible" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore quisquam voluptate sit modi aliquid veritatis, expedita molestias sed dolor labore iure veniam omnis pariatur similique natus laboriosam corporis, eos voluptates!</p>
+
+</li>
+
+</ol>
+
+<button onclick="toggle('p1')">toggle p1</button>
+<button onclick="toggle('p2')">toggle p2</button>
+<button onclick="toggle('p3')">toggle p3</button>
+
+</section>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+<section>
 <button onclick="toggleButton(this)">Click me</button>
+</section>
 
 </body>
 
